@@ -22,10 +22,10 @@
 			<version>3.1.0</version>
 		</dependency>
 		<dependency>
-            <groupId>org.apache.commons</groupId>
-            <artifactId>commons-text</artifactId>
-            <version>1.9</version>
-        </dependency>
+		    <groupId>org.apache.commons</groupId>
+		    <artifactId>commons-text</artifactId>
+		    <version>1.15.0</version>
+		</dependency>
        <dependency>
             <groupId>mysql</groupId>
             <artifactId>mysql-connector-java</artifactId>
@@ -98,7 +98,7 @@
 	      <dependency>
 	        <groupId>org.mockito</groupId>
 	        <artifactId>mockito-core</artifactId>
-	        <version>2.28.2</version>
+	        <version>5.2.0</version>
 	      </dependency>
 	      <dependency>
 	        <groupId>com.google.errorprone</groupId>
@@ -139,6 +139,14 @@
 			</exclusions>
       	  </dependency>
 	</dependencies>
+
+	<repositories>
+		<repository>
+			<id>endor-patches</id>
+			<name>Endor Labs Patch Registry</name>
+			<url>https://factory.westus2-us.endorlabs.com/v1/namespaces/ram-learn/firewall/maven/</url>
+		</repository>
+	</repositories>
 
 	<build>
 		<finalName>endor-java-webapp-demo</finalName>
